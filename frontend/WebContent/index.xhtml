@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+		
+<h:head>ADH401t Test 1</h:head>		
+		
+	<h:body>
+	<h2>DigiBank</h2>
+		
+		<h:form>
+			<h:panelGrid colums="2">
+				<h:outputLabel value="Name :" />
+					<h:inputText value="#{clientcontroller.client.name}"></h:inputText>
+				<h:outputLabel value="Source Passport :" />
+					<h:inputText value="#{clientcontroller.client.sourcepassport}"></h:inputText>
+				<h:outputLabel value="Destination Passport :" />
+					<h:inputText value="#{clientcontroller.client.destinationpassport}"></h:inputText>
+				<h:outputLabel value="Destination Bank :" />
+					<h:inputText value="#{clientcontroller.client.destinationbank}"></h:inputText>
+				<h:outputLabel value="Destination Country :" />
+					<h:inputText value="#{clientcontroller.client.destinationcountry}"></h:inputText>
+				<h:outputLabel value="Account Number :" />
+					<h:inputText value="#{clientcontroller.client.accountnumber}"></h:inputText>
+				<h:outputLabel value="Amount :" />
+					<h:inputText value="#{clientcontroller.client.amount}"></h:inputText>
+				<h:outputLabel value="Transaction Code :" />
+					<h:inputText value="#{clientcontroller.client.transactioncode}" />
+			</h:panelGrid>
+				<h:commandButton action="#{clientcontroller.addNewTransaction}" value="submit" />
+		</h:form> 
+
+	</h:body>			
+
+</html>
